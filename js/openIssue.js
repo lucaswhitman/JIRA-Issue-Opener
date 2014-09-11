@@ -24,7 +24,7 @@ function returnError(errorText, element) {
 
 var key,
 	url,
-    isError = 0;
+	isError = 0;
 
 function setUrl(urlOption) {
 	'use strict';
@@ -37,17 +37,17 @@ function setUrl(urlOption) {
 }
 
 function removeSpaces(string) {
-    'use strict';
-    
-    if (string.charAt(0) === ' ') {
-        string = string.slice(1, string.length);
-    }
-    
-    if (string.charAt(string.length - 1) === ' ') {
-        string = string.slice(0, string.length - 1);
-    }
-    
-    return string;
+	'use strict';
+
+	if (string.charAt(0) === ' ') {
+		string = string.slice(1, string.length);
+	}
+
+	if (string.charAt(string.length - 1) === ' ') {
+		string = string.slice(0, string.length - 1);
+	}
+
+	return string;
 }
 
 
@@ -63,11 +63,11 @@ function openIssue() {
 	chrome.storage.sync.get(function (item) {
 
 		var urlOption = item.savedUrl;
-		
+
 		key = document.getElementById('key').value;
 		setUrl(urlOption);
 		key = removeSpaces(key);
-		
+
 		if (key === '') {
 			isError = 1;
 			returnError('Please insert key', 'key');
@@ -75,12 +75,12 @@ function openIssue() {
 			openWindow();
 		}
 	});
-	
-    setTimeout(function () {
-        if (isError === 0) {
-            returnError('Please define URL in Options', 'key');
-        }
-    }, 500);
+
+	setTimeout(function () {
+		if (isError === 0) {
+			returnError('Please define URL in Options', 'key');
+		}
+	}, 500);
 }
 
 var enter = 13;
