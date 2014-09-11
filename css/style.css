@@ -1,0 +1,27 @@
+body {
+	min-width: 200px;
+	overflow-x: hidden;
+	background-color: #205081;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: white
+}
+input {
+	font-size: 14px;
+	color: #000000
+}
+#error {
+	font-size: 14px;
+	color: #FF6666;
+	text-align: center
+}
+#info {
+	float: right;
+	color: white;
+	font-size: 10px
+}
+.description {
+	text-align: right;
+	font-size: 11px;
+	color: #CCCCCC
+}
