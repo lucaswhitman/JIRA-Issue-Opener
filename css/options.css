@@ -5,7 +5,8 @@ body {
 	color: black
 }
 img {
-	float: left
+	float: left;
+	margin: 10px
 }
 h1 {
 	color: #205081;
@@ -23,12 +24,6 @@ table {
 td {
 	vertical-align: top
 }
-td.left {
-	width: 240px
-}
-td.right {
-	width: 500px
-}
 #button {
 	position: relative;
 	float: left;
@@ -45,7 +40,7 @@ td.right {
 	color: white;
 	border: 0px;
 	font-size: 20px;
-	width: 200px
+	width: 160px
 }
 #save:hover {
 	background-color: #183656
