@@ -20,14 +20,12 @@ Any questions or comments are welcome! You can write me an e-mail on <a href="ma
 Source code and issue reporting is available at GitHub: <a href="https://github.com/iriiiina/JIRA-Issue-Opener">https://github.com/iriiiina/JIRA-Issue-Opener</a>
 
 <h1>Screenshots</h1>
-<center>
-<img border="0" src="http://4.bp.blogspot.com/-wOo3g1ZqmrI/VBLcx6DyiNI/AAAAAAAALVs/5IIZmNS2Tsk/s1600/extension.jpg" />
-<img border="0" src="http://4.bp.blogspot.com/-Wb3ckR69dJE/VBLcx2KA7uI/AAAAAAAALVw/sgnMzDi3FWA/s1600/options.jpg" width = "400px"/></center>
+<img border="0" src="http://4.bp.blogspot.com/-wOo3g1ZqmrI/VBLcx6DyiNI/AAAAAAAALVs/5IIZmNS2Tsk/s1600/extension.jpg" />&nbsp;
+<img border="0" src="http://4.bp.blogspot.com/-Wb3ckR69dJE/VBLcx2KA7uI/AAAAAAAALVw/sgnMzDi3FWA/s1600/options.jpg" height = "190px"/>
 
 <h1>Description</h1>
 Basically extension simply adds your issue key to specified URL and opens it in new tab:
-<center>
-<code>URL/browse/KEY</code></center>
+<code>URL/browse/KEY</code>
 
 Where <code>URL</code> is parameter, that user should specify in Options page (only one time after installation) and <code>KEY</code> is issue key that user inserts into extension field.
 <code>KEY</code> is case insensitive. One space in the beginning and all spaces in the end will be trimmed.
