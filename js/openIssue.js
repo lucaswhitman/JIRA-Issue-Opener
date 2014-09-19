@@ -38,14 +38,15 @@ function setUrl(urlOption) {
 
 function removeSpaces(string) {
 	'use strict';
-	
-	while (string.charAt(string.length - 1) === ' ') {
-		string = string.slice(0, string.length - 1);
-	}
 
 	if (string.charAt(0) === ' ') {
+		//string = string.slice(1, string.length);
 		var temp = string.split(' ');
 		string = temp[temp.length - 1];
+	}
+
+	if (string.charAt(string.length - 1) === ' ') {
+		string = string.slice(0, string.length - 1);
 	}
 
 	return string;
