@@ -1,7 +1,7 @@
 <h1>Short Description</h1>
 Extension opens JIRA issue in new tab. User needs only to insert issue key.
 
-It is useful for developers or testers who often need to open JIRA issue using its key.
+It is useful for developers, analysts or testers who often need to open JIRA issue using its key.
 
 <a href = "http://ivanova-irina.blogspot.com/p/jira-issue-opener.html">Page of JIRA Issue Opener</a>
 
