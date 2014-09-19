@@ -5,7 +5,7 @@ function save_options() {
 		savedUrl: url
 	}, function () {
 		var status = document.getElementById('status');
-		status.textContent = 'Options saved';
+		status.textContent = 'URL is saved';
 		setTimeout(function () {
 			status.textContent = '';
 		}, 2000);
@@ -17,6 +17,7 @@ function restore_options() {
 		savedUrl: 'http://jira.atlassian.com'
 	}, function (items) {
 		document.getElementById('urlOption').value = items.savedUrl;
+		document.getElementById('urlOption').select();
 	});
 }
 document.addEventListener('DOMContentLoaded', restore_options);
