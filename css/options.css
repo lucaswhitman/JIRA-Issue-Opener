@@ -27,12 +27,14 @@ td {
 #button {
 	position: relative;
 	float: left;
+	padding-top: 20px;
 	width: 200px
 }
 #status {
 	position: relative;
-	color: #205081;
+	color: #006600;
 	width: 200px;
+	padding-top: 25px;
 	float: left
 }
 #save {
