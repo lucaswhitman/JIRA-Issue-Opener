@@ -23,24 +23,24 @@ function returnError(errorText, element) {
 }
 
 var key,
-	url,
-	isError = 0;
+	url;
 
 function setUrl(urlOption) {
 	'use strict';
 
-	if (urlOption.charAt(urlOption.length - 1) === '/') {
-		url = urlOption + 'browse/';
-	} else {
-		url = urlOption + '/browse/';
-	}
+    if (urlOption !== undefined) {
+        if (urlOption.charAt(urlOption.length - 1) === '/') {
+            url = urlOption + 'browse/';
+        } else {
+            url = urlOption + '/browse/';
+        }
+    }
 }
 
 function removeSpaces(string) {
 	'use strict';
 
 	if (string.charAt(0) === ' ') {
-		//string = string.slice(1, string.length);
 		var temp = string.split(' ');
 		string = temp[temp.length - 1];
 	}
@@ -83,18 +83,13 @@ function openIssue() {
 		key = removeSkypeFormatting(key);
 
 		if (key === '') {
-			isError = 1;
 			returnError('Please insert key', 'key');
-		} else {
+		} else if (url === undefined) {
+			returnError('Please define URL in Options', 'key');
+        } else {
 			openWindow();
 		}
 	});
-
-	setTimeout(function () {
-		if (isError === 0) {
-			returnError('Please define URL in Options', 'key');
-		}
-	}, 500);
 }
 
 var enter = 13;
