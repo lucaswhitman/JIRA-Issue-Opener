@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Options of JIRA Issue Opener</title>
+	<link rel='stylesheet' type='text/css' href='css/options.css' />
+</head>
+
+<body>
+
+	<img src='icons/big.jpg' width='130' alt='Fisheye icon' />
+	<h1>Options of JIRA Issue Opener</h1>
+	<p>Extension opens JIRA issue in new tab</p>
+	<p id='contacts'>Read more on <a href='http://ivanova-irina.blogspot.com/p/jira-issue-opener.html' target='_blank'>JIRA Issue Opener page</a>
+		<br />
+		<a href='mailto:iriiiina@gmail.com'>iriiiina@gmail.com</a>
+	</p>
+	<br />
+	<br />
+	<br />
+	<table>
+        <tr>
+            <td colspan = '2'><div id='error'><br /></div></td>
+        </tr>
+		<tr>
+			<td>
+				<label for='urlOption'><b>URL of JIRA:</b>
+				</label>
+			</td>
+			<td>
+				<input type='text' name='urlOption' id='urlOption' maxlength='255' size='30' autofocus />&nbsp;<code>/browse/KEY</code>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<div id='button'>
+					<button id='save'>Save</button>
+				</div>
+				<div id='status'></div>
+			</td>
+		</tr>
+	</table>
+
+	<script src='js/options.js'></script>
+
+</body>
+
+</html>

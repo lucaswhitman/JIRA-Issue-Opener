@@ -1,0 +1,62 @@
+body {
+	background-color: white;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: black;
+    padding-left: 50px
+}
+img {
+	float: left;
+	margin: 10px
+}
+h1 {
+	color: #205081;
+	padding-left: 100px
+}
+p {
+	color: gray;
+	padding-left: 50px
+}
+table {
+	border-left: 10px;
+	border-left-color: #205081;
+	border-left-style: solid
+}
+td {
+	vertical-align: top
+}
+#button {
+	position: relative;
+	float: left;
+	padding-top: 20px;
+	width: 200px
+}
+#status {
+	position: relative;
+	color: #006600;
+	width: 200px;
+	padding-top: 25px;
+	float: left
+}
+#error {
+    position: relative;
+	color: #CC0000;
+	padding-top: 25px;
+	float: left
+}
+#save {
+	background-color: #205081;
+	color: white;
+	border: 0px;
+	font-size: 20px;
+	width: 160px
+}
+#save:hover {
+	background-color: #183656
+}
+a {
+	color: #205081
+}
+#contacts {
+	font-size: 10px
+}
