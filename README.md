@@ -5,6 +5,8 @@ It is useful for developers, analysts or testers who often need to open JIRA iss
 
 <a href = "http://ivanova-irina.blogspot.com/p/jira-issue-opener.html">Page of JIRA Issue Opener</a>
 
+<a href = "https://github.com/iriiiina/JIRA-Issue-Opener-FF">Same extension for FireFox</a>
+
 <h1>Download and Install</h1>
 <ul>
 <li><strong><a href="https://chrome.google.com/webstore/detail/jira-issue-opener/koceedenfpfaogpnpplkeikokjdnlamj">Install</a></strong> last version from Google Store
