@@ -9,12 +9,15 @@ img {
 	float: left;
 	margin: 10px
 }
+ul {
+	padding-left: 100px;
+	margin-left: 100px
+}
 h1 {
 	color: #205081;
 	padding-left: 100px
 }
 p {
-	color: gray;
 	padding-left: 50px
 }
 table {

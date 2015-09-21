@@ -27,7 +27,7 @@ function save_options() {
 
 function restore_options() {
 	chrome.storage.sync.get({
-		savedUrl: 'http://jira.atlassian.com'
+		savedUrl: 'https://jira.atlassian.com'
 	}, function (items) {
 		document.getElementById('urlOption').value = items.savedUrl;
 		document.getElementById('urlOption').select();
@@ -42,16 +42,12 @@ document.getElementById('save').addEventListener('click',
 var enter = 13;
 
 function inputURLListener(e) {
-	'use strict';
-
 	if (e.keyCode === enter) {
 		save_options();
 	}
 }
 
 function listenInputURL(inputURL) {
-	'use strict';
-
 	if (inputURL.addEventListener) {
 		inputURL.addEventListener('keydown', inputURLListener, false);
 	} else if (inputURL.attachEvent) {
@@ -60,8 +56,6 @@ function listenInputURL(inputURL) {
 }
 
 function listenURL() {
-	'use strict';
-
 	listenInputURL(document.getElementById('urlOption'));
 }
 

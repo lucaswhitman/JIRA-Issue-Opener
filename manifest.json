@@ -1,7 +1,7 @@
 {
 	"name": "JIRA Issue Opener",
 	"short_name": "JIRA Issue Opener",
-	"version": "1.2",
+	"version": "2.0",
 	"manifest_version": 2,
 	"description": "Extension opens JIRA issue in new tab",
 	"homepage_url": "http://ivanova-irina.blogspot.com/p/jira-issue-opener.html",

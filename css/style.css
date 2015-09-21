@@ -8,18 +8,14 @@ body {
 }
 input {
 	font-size: 14px;
-	color: #000000
+	color: #000000;
+	margin-left: 20px
 }
 #error {
 	font-size: 14px;
 	color: #CC0000;
     padding-bottom: 10px;
 	text-align: center
-}
-#info {
-	float: right;
-	color: white;
-	font-size: 10px
 }
 .description {
 	text-align: right;

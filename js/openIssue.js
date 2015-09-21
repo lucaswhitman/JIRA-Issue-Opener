@@ -1,13 +1,9 @@
 function setErrorText(errorText) {
-	'use strict';
-
 	var divError = document.getElementById('error');
 	divError.innerText = errorText + '\n';
 }
 
 function colorBorderToRed(element) {
-	'use strict';
-
 	var border = document.getElementById(element);
 	border.style.borderColor = '#FF6666';
 	border.focus();
@@ -15,8 +11,6 @@ function colorBorderToRed(element) {
 }
 
 function returnError(errorText, element) {
-	'use strict';
-
 	setErrorText(errorText);
 	colorBorderToRed(element);
 	throw '';
@@ -26,8 +20,6 @@ var key,
 	url;
 
 function setUrl(urlOption) {
-	'use strict';
-
     if (urlOption !== undefined) {
         if (urlOption.charAt(urlOption.length - 1) === '/') {
             url = urlOption + 'browse/';
@@ -38,8 +30,6 @@ function setUrl(urlOption) {
 }
 
 function removeSpaces(string) {
-	'use strict';
-
     while (string.charAt(string.length - 1) === ' ') {
 		string = string.slice(0, string.length - 1);
 	}
@@ -53,8 +43,6 @@ function removeSpaces(string) {
 }
 
 function removeSkypeFormatting(string) {
-	'use strict';
-	
 	if (string.charAt(0) === '[') {
 		var temp = string.split(' ');
 		string = temp[temp.length - 1];
@@ -65,14 +53,10 @@ function removeSkypeFormatting(string) {
 
 
 function openWindow() {
-	'use strict';
-
 	window.open(url + key);
 }
 
 function openIssue() {
-	'use strict';
-
 	chrome.storage.sync.get(function (item) {
 
 		var urlOption = item.savedUrl;
@@ -95,16 +79,12 @@ function openIssue() {
 var enter = 13;
 
 function inputKeyListener(e) {
-	'use strict';
-
 	if (e.keyCode === enter) {
 		openIssue();
 	}
 }
 
 function listenInputKey(inputKey) {
-	'use strict';
-
 	if (inputKey.addEventListener) {
 		inputKey.addEventListener('keydown', inputKeyListener, false);
 	} else if (inputKey.attachEvent) {
@@ -113,8 +93,6 @@ function listenInputKey(inputKey) {
 }
 
 function listenKeys() {
-	'use strict';
-
 	listenInputKey(document.getElementById('key'));
 }
 
