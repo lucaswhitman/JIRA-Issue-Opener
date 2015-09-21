@@ -21,7 +21,7 @@ Any questions or comments are welcome! You can write me an e-mail on [iriiiina@g
 Source code and issue reporting is available at GitHub: [https://github.com/iriiiina/JIRA-Issue-Opener](https://github.com/iriiiina/JIRA-Issue-Opener "https://github.com/iriiiina/JIRA-Issue-Opener")
 
 # Screenshots
-![JIRA Issue Opener](http://3.bp.blogspot.com/-lXr4C8njBBs/VBmYrnVGTDI/AAAAAAAALXk/k4UpCRoBFBY/s1600/extension.jpg "JIRA Issue Opener")&nbsp;![JIRA Issue Opener: Options](http://4.bp.blogspot.com/-Wb3ckR69dJE/VBLcx2KA7uI/AAAAAAAALVw/sgnMzDi3FWA/s1600/options.jpg "JIRA Issue Opener: Options")
+![JIRA Issue Opener](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/extension.png "JIRA Issue Opener")&nbsp;![JIRA Issue Opener: Options](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/options.png "JIRA Issue Opener: Options")
 
 # Description
 Basically extension simply adds your issue key to specified URL and opens it in new tab:
