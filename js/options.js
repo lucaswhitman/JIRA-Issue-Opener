@@ -1,5 +1,6 @@
 function save_options() {
 	var url = document.getElementById('urlOption').value;
+	var project = document.getElementById('projectOption').value;
     var status = document.getElementById('status');
     var error = document.getElementById('error');
     var border = document.getElementById('urlOption');
@@ -15,9 +16,10 @@ function save_options() {
         border.select();
         
         chrome.storage.sync.set({
-            savedUrl: url
+            savedUrl: url,
+            savedProject: project
         }, function () {
-            status.textContent = 'URL is saved';
+            status.textContent = 'Options saved';
             setTimeout(function () {
                 status.textContent = '';
             }, 2000);
@@ -27,9 +29,11 @@ function save_options() {
 
 function restore_options() {
 	chrome.storage.sync.get({
-		savedUrl: 'https://jira.atlassian.com'
+		savedUrl: 'https://jira.atlassian.com',
+        savedProject: 'PROJECT'
 	}, function (items) {
 		document.getElementById('urlOption').value = items.savedUrl;
+		document.getElementById('projectOption').value = items.savedProject;
 		document.getElementById('urlOption').select();
 	});
 }
