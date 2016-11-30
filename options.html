@@ -9,12 +9,13 @@
 <body>
 
 	<img src='icons/big.jpg' width='130' alt='Fisheye icon' />
-	<h1>Options of JIRA Issue Opener 2.0</h1>
+	<h1>Options of JIRA Issue Opener 2.1</h1>
 	<p>Extension opens JIRA issue in new tab. User needs only to insert issue key.</p>
 	<ul>
 		<li>KEY is case insensitive</li>
 		<li>All spaces in the beginning and in the end will be trimmed</li>
 		<li>Skype formatting will be trimmed: <code>[16.09.2014 13:34:34] Irina Ivanova: KEY-776</code> will be recognized as <code>KEY-776</code></li>
+        <li>If key contains only numbers it will be prepended with PROJECT option</li>
 	</ul>
 	<p id='contacts'>Read more on <a href='http://ivanova-irina.blogspot.com/p/jira-issue-opener.html' target='_blank'>JIRA Issue Opener page</a> or write to <a href='mailto:iriiiina@gmail.com'>iriiiina@gmail.com</a>
 	</p>
@@ -31,7 +32,7 @@
 				</label>
 			</td>
 			<td>
-				<input type='text' name='urlOption' id='urlOption' maxlength='255' size='30' autofocus />&nbsp;<code>/browse/PROJECT-123</code>
+				<input type='text' name='urlOption' id='urlOption' maxlength='255' size='30' autofocus />&nbsp;<code>/browse/KEY</code>
 			</td>
 		</tr>
 		<tr>
@@ -40,7 +41,7 @@
 				</label>
 			</td>
 			<td>
-				<input type='text' name='projectOption' id='projectOption' maxlength='255' size='30' autofocus />
+				<input type='text' name='projectOption' id='projectOption' maxlength='255' size='30' autofocus />&nbsp;<code>PROJECT-123</code>
 			</td>
 		</tr>
 		<tr>
