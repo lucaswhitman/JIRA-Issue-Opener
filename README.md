@@ -34,6 +34,7 @@ Where `URL` is parameter, that user should specify in Options page (only one tim
 * `KEY` is case insensitive
 * All spaces in the beginning and in the end will be trimmed
 * Skype formatting will be trimmed: `[16.09.2014 13:34:34] Irina Ivanova: KEY-776` will be recognized as `KEY-776`
+* If key contains only numbers it will be prepended with PROJECT option
 
 # Chrome Tip
 You can configure hot keys for extension in the Google Chrome:

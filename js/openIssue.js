@@ -51,6 +51,12 @@ function removeSkypeFormatting(string) {
 	return string;
 }
 
+function maybeAddProject(string, project) {
+    if (string.match(/^[0-9]+$/) != null) {
+        string = project + '-' + string;
+    }
+    return string;
+}
 
 function openWindow() {
 	window.open(url + key);
@@ -60,11 +66,13 @@ function openIssue() {
 	chrome.storage.sync.get(function (item) {
 
 		var urlOption = item.savedUrl;
+        var projectOption = item.savedProject;
 
 		key = document.getElementById('key').value;
 		setUrl(urlOption);
 		key = removeSpaces(key);
 		key = removeSkypeFormatting(key);
+        key = maybeAddProject(key, projectOption);
 
 		if (key === '') {
 			returnError('Please insert key', 'key');
