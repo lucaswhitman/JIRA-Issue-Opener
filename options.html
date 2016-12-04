@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Options of JIRA Issue Opener 2.1</title>
+  <title>Options of JIRA Issue Opener 2.1</title>
 	<link rel='stylesheet' type='text/css' href='css/options.css' />
 </head>
 
@@ -15,7 +15,7 @@
 		<li>KEY is case insensitive</li>
 		<li>All spaces in the beginning and in the end will be trimmed</li>
 		<li>Skype formatting will be trimmed: <code>[16.09.2014 13:34:34] Irina Ivanova: KEY-776</code> will be recognized as <code>KEY-776</code></li>
-        <li>If key contains only numbers it will be prepended with PROJECT option</li>
+    <li>If key contains only numbers it will be prepended with project option: the link will be <code>URL/browse/PROJECT-KEY</code></li>
 	</ul>
 	<p id='contacts'>Read more on <a href='http://ivanova-irina.blogspot.com/p/jira-issue-opener.html' target='_blank'>JIRA Issue Opener page</a> or write to <a href='mailto:iriiiina@gmail.com'>iriiiina@gmail.com</a>
 	</p>
@@ -23,9 +23,9 @@
 	<br />
 	<br />
 	<table>
-        <tr>
-            <td colspan = '2'><div id='error'><br /></div></td>
-        </tr>
+    <tr>
+      <td colspan = '2'><div id='error'><br /></div></td>
+    </tr>
 		<tr>
 			<td>
 				<label for='urlOption'><b>URL of JIRA:</b>
@@ -37,11 +37,11 @@
 		</tr>
 		<tr>
 			<td>
-				<label for='urlOption'><b>Default project:</b>
+				<label for='urlOption'><b>Default Project:</b>
 				</label>
 			</td>
 			<td>
-				<input type='text' name='projectOption' id='projectOption' maxlength='255' size='30' autofocus />&nbsp;<code>PROJECT-123</code>
+				<input type='text' name='projectOption' id='projectOption' maxlength='255' size='30' />&nbsp;<code>-KEY</code>
 			</td>
 		</tr>
 		<tr>

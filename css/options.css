@@ -3,7 +3,7 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	color: black;
-    padding-left: 50px
+  padding-left: 50px
 }
 img {
 	float: left;
@@ -42,7 +42,7 @@ td {
 	float: left
 }
 #error {
-    position: relative;
+  position: relative;
 	color: #CC0000;
 	padding-top: 25px;
 	float: left
@@ -61,5 +61,6 @@ a {
 	color: #205081
 }
 #contacts {
-	font-size: 10px
+	font-size: 10px;
+	float: right;
 }

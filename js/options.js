@@ -1,36 +1,36 @@
 function save_options() {
 	var url = document.getElementById('urlOption').value;
 	var project = document.getElementById('projectOption').value;
-    var status = document.getElementById('status');
-    var error = document.getElementById('error');
-    var border = document.getElementById('urlOption');
+  var status = document.getElementById('status');
+  var error = document.getElementById('error');
+  var border = document.getElementById('urlOption');
 
 	if (url === '') {
-        error.textContent = 'Please fill URL';
-        border.style.borderColor = '#CC0000';
-        border.focus();
-    } else {
-        error.innerText = '\n';
-        border.style.border = '';
-        border.focus();
-        border.select();
-        
-        chrome.storage.sync.set({
-            savedUrl: url,
-            savedProject: project
-        }, function () {
-            status.textContent = 'Options saved';
-            setTimeout(function () {
-                status.textContent = '';
-            }, 2000);
-        });
-    }
+  	error.textContent = 'Please fill URL';
+    border.style.borderColor = '#CC0000';
+    border.focus();
+  } else {
+  	error.innerText = '\n';
+    border.style.border = '';
+    border.focus();
+    border.select();
+
+    chrome.storage.sync.set({
+    	savedUrl: url,
+      savedProject: project
+    }, function () {
+      status.textContent = 'Options saved';
+      setTimeout(function () {
+      	status.textContent = '';
+			}, 2000);
+    });
+  }
 }
 
 function restore_options() {
 	chrome.storage.sync.get({
 		savedUrl: 'https://jira.atlassian.com',
-        savedProject: 'PROJECT'
+    	savedProject: 'PROJECT'
 	}, function (items) {
 		document.getElementById('urlOption').value = items.savedUrl;
 		document.getElementById('projectOption').value = items.savedProject;
@@ -40,8 +40,6 @@ function restore_options() {
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click',
 	save_options);
-
-
 
 var enter = 13;
 

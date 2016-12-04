@@ -17,23 +17,23 @@ function returnError(errorText, element) {
 }
 
 var key,
-	url;
+		url;
 
 function setUrl(urlOption) {
-    if (urlOption !== undefined) {
-        if (urlOption.charAt(urlOption.length - 1) === '/') {
-            url = urlOption + 'browse/';
-        } else {
-            url = urlOption + '/browse/';
-        }
+  if (urlOption !== undefined) {
+  	if (urlOption.charAt(urlOption.length - 1) === '/') {
+    	url = urlOption + 'browse/';
+    } else {
+      url = urlOption + '/browse/';
     }
+  }
 }
 
 function removeSpaces(string) {
-    while (string.charAt(string.length - 1) === ' ') {
+  while (string.charAt(string.length - 1) === ' ') {
 		string = string.slice(0, string.length - 1);
 	}
-    
+
 	if (string.charAt(0) === ' ') {
 		var temp = string.split(' ');
 		string = temp[temp.length - 1];
@@ -47,15 +47,16 @@ function removeSkypeFormatting(string) {
 		var temp = string.split(' ');
 		string = temp[temp.length - 1];
 	}
-	
+
 	return string;
 }
 
-function maybeAddProject(string, project) {
-    if (string.match(/^[0-9]+$/) != null) {
-        string = project + '-' + string;
-    }
-    return string;
+function addDefaultProject(string, project) {
+  if (string.match(/^[0-9]+$/) != null) {
+    string = project + '-' + string;
+  }
+
+  return string;
 }
 
 function openWindow() {
@@ -66,19 +67,19 @@ function openIssue() {
 	chrome.storage.sync.get(function (item) {
 
 		var urlOption = item.savedUrl;
-        var projectOption = item.savedProject;
+    var projectOption = item.savedProject;
 
 		key = document.getElementById('key').value;
 		setUrl(urlOption);
 		key = removeSpaces(key);
 		key = removeSkypeFormatting(key);
-        key = maybeAddProject(key, projectOption);
+    key = addDefaultProject(key, projectOption);
 
 		if (key === '') {
 			returnError('Please insert key', 'key');
 		} else if (url === undefined) {
 			returnError('Please define URL in Options', 'key');
-        } else {
+    } else {
 			openWindow();
 		}
 	});

@@ -24,17 +24,19 @@ Source code and issue reporting is available at GitHub: [https://github.com/irii
 ![JIRA Issue Opener](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/extension.png "JIRA Issue Opener")&nbsp;![JIRA Issue Opener: Options](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/options.png "JIRA Issue Opener: Options")
 
 # Description
-Basically extension simply adds your issue key to specified URL and opens it in new tab:
+Basically extension simply adds your issue key to specified URL and opens it in new tab. `URL` is parameter, that user should specify in Options page (only one time after installation) and `KEY` is issue key that user inserts into extension field.
 
-`URL/browse/KEY`
-
-Where `URL` is parameter, that user should specify in Options page (only one time after installation) and `KEY` is issue key that user inserts into extension field.
+There are two possible options:
+* URL of JIRA
+* Default Project
+If only first one is filled, then final URL will be `URL/browse/KEY` - you can use this if you have multiple JIRA projects.
+If both fields are filled and inserted key contains only numbers, then default project will be prepended to the key. The final URL will be `URL/browse/PROJECT-KEY` - this option can be used if you have only one JIRA project and you operate only with the sequence number in the JIRA issue code.
 
 **Features**
 * `KEY` is case insensitive
 * All spaces in the beginning and in the end will be trimmed
 * Skype formatting will be trimmed: `[16.09.2014 13:34:34] Irina Ivanova: KEY-776` will be recognized as `KEY-776`
-* If key contains only numbers it will be prepended with PROJECT option
+* If key contains only numbers it will be prepended with project option: the link will be `URL/browse/PROJECT-KEY`
 
 # Chrome Tip
 You can configure hot keys for extension in the Google Chrome:
