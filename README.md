@@ -22,7 +22,7 @@ Source code and issue reporting is available at GitHub: [https://github.com/irii
 
 # Screenshots
 ![JIRA Issue Opener](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/extension.png "JIRA Issue Opener")
-[JIRA Issue Opener: Right Click](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/right-click.png "JIRA Issue Opener: Right Click")
+[JIRA Issue Opener: Right Click](https://raw.githubusercontent.com/lucaswhitman/JIRA-Issue-Opener/master/screenshots/right-click.png "JIRA Issue Opener: Right Click")
 ![JIRA Issue Opener: Options](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/options.png "JIRA Issue Opener: Options")
 
 
