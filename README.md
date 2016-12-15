@@ -21,7 +21,10 @@ Any questions or comments are welcome! You can write me an e-mail on [iriiiina@g
 Source code and issue reporting is available at GitHub: [https://github.com/iriiiina/JIRA-Issue-Opener](https://github.com/iriiiina/JIRA-Issue-Opener "https://github.com/iriiiina/JIRA-Issue-Opener")
 
 # Screenshots
-![JIRA Issue Opener](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/extension.png "JIRA Issue Opener")&nbsp;![JIRA Issue Opener: Options](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/options.png "JIRA Issue Opener: Options")
+![JIRA Issue Opener](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/extension.png "JIRA Issue Opener")
+[JIRA Issue Opener: Right Click](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/right-click.png "JIRA Issue Opener: Right Click")
+![JIRA Issue Opener: Options](https://raw.githubusercontent.com/iriiiina/JIRA-Issue-Opener/master/screenshots/options.png "JIRA Issue Opener: Options")
+
 
 # Description
 Basically extension simply adds your issue key to specified URL and opens it in new tab. `URL` is parameter, that user should specify in Options page (only one time after installation) and `KEY` is issue key that user inserts into extension field.
